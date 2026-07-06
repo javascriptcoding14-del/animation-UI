@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme{
+    --animate-fadeIn:fadeIn 1s ease-in-out infinite;
+}
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
