@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Animation and UI</title>
+</head>
+<body class="bg-black min-h-screen">
+    <header class="flex flex-col items-center justify-center gap-1.5 p-2">
+        <h1 class="text-white text-2xl font-medium align-middle">Animations & UI Feedback.</h1>
+        <p class="text-gray-300 text-[10px] align-middle">
+            Interact with different kind of Animation & UI
+        </p>
+    </header> 
+    <main>
+        <section class="flex flex-col gap-1 justify-between px-10 py-2 mx-auto">
+            <h2 class="text-white text-lg font-medium">Built in Animation</h2>
+            <div class="grid grid-cols-4 gap-2 items-center justify-evenly w-full">
+                <div class="flex flex-col gap-0.5  items-center justify-center p-2 bg-gray-900 border-2 border-e-black h-20 w-full shadow-2xl rounded-md">
+                    <div class="border-blue-400 border-b-2 border-r-2 rounded-full size-5 animate-spin"></div>
+                    <h3 class="text-white text-xs">animate-spin</h3>
+                    <p class="text-gray-300 text-[8px]">Loading-spinner</p>
+                </div>
+                <div class="flex flex-col gap-0.5  items-center justify-center p-2 bg-gray-900 border-2 border-e-black h-20 w-full shadow-2xl rounded-md">
+                    <div class="bg-green-500 border-2 rounded-full size-5 animate-ping"></div>
+                    <h3 class="text-white text-xs">animate-ping</h3>
+                    <p class="text-gray-300 text-[8px]">Notification pulse</p>
+                </div>
+                <div class="flex flex-col gap-0.5  items-center justify-center p-2 bg-gray-900 border-2 border-e-black h-20 w-full shadow-2xl rounded-md">
+                    <div class="bg-purple-400 border-2 rounded-md size-5 animate-pulse"></div>
+                    <h3 class="text-white text-xs">animate-pulse</h3>
+                    <p class="text-gray-300 text-[8px]">Skelton loader effect</p>
+                </div>
+                <div class="flex flex-col gap-0.5  items-center justify-center p-2 bg-gray-900 border-2 border-e-black h-20 w-full shadow-2xl rounded-md">
+                    <div class="bg-orange-400 border-2 rounded-full size-5 animate-bounce"></div>
+                    <h3 class="text-white text-xs">animate-bounce</h3>
+                    <p class="text-gray-300 text-[8px]">Bounce-indicator</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="flex flex-col gap-1 justify-between px-10 py-2 mx-auto">
+            <h2 class="text-white text-lg font-medium">Button Animation</h2>
+            <div class="flex flex-row gap-2.5 items-center">
+                <button class="w-fit bg-blue-400 hover:scale-110 rounded-md  px-4 py-1 text-white text-[11px]">
+                    Scale effect
+                </button>
+                <button class="w-fit bg-purple-400 hover:scale-105 transition-all hover:shadow-2xl rounded-md  px-4 py-1 text-white text-[11px]">
+                    Shadow+Scale
+                </button>
+                <button class="w-fit bg-green-400 hover:bg-amber-300 transition ease-in-out rounded-md  px-4 py-1 text-white text-[11px]">
+                    Color transition
+                </button>
+                <button class="w-fit bg-orange-400 hover:rotate-6 transition duration-300 ease rounded-md  px-4 py-1 text-white text-[11px]">
+                    Rotate effect
+                </button>
+                <button class="w-fit bg-pink-900 hover:-translate-y-2 transition delay-100 rounded-md  px-4 py-1 text-white text-[11px]">
+                    Lift effect
+                </button>
+                <button class="w-fit bg-sky-400 hover:scale-95 hover:translate-1 transition-transform duration-1000  rounded-md  px-4 py-1 text-white text-[11px]">
+                    Combined
+                </button>
+                
+                
+            </div>
+        </section>
+
+        <section class="flex flex-col gap-1 justify-between px-10 py-2 mx-auto">
+            <h2 class="text-white text-lg font-medium">Card Animation</h2>
+            <div class="grid grid-cols-3  gap-3 items-center justify-evenly w-full">
+                <div class="flex flex-col gap-0.5 duration-300 ease hover:-translate-y-1 hover:shadow-amber-400 items-start justify-center p-2 bg-gray-900 border-2 border-e-black h-20 w-full shadow-2xl rounded-md">
+                    <div class="bg-blue-400 border-blue-400 rounded-md size-5"></div>
+                    <h3 class="text-white text-xs">Lift & Shadow</h3>
+                    <p class="text-gray-300 text-[8px]">Lift and shadow on hover effect</p>
+                </div>
+                <div class="flex flex-col gap-0.5 group hover:scale-110 items-start justify-center p-2 bg-gray-900 border-2 border-e-black h-20 w-full shadow-2xl rounded-md">
+                    <div class="bg-green-500 border-2 transition delay-100 duration-300 group-hover:rotate-20 size-5 rounded-md"></div>
+                    <h3 class="text-white text-xs">Scale & Rotate</h3>
+                    <p class="text-gray-300 text-[8px]">Scale and rotate on hover using group hover</p>
+                </div>
+                <div class="flex flex-col gap-0.5  items-start justify-center p-2 hover:border-purple-400 trasition duration-300 bg-gray-900 border-2 border-e-black h-20 w-full shadow-2xl rounded-md">
+                    <div class="bg-purple-400 border-purple-400  rounded-md size-5"></div>
+                    <h3 class="text-white text-xs">Border revealed</h3>
+                    <p class="text-gray-300 text-[8px]">Border reveal animation,show border at end</p>
+                </div>
+                
+                
+            </div>
+        </section>
+
+         <section class="flex flex-col gap-1 justify-between px-10 py-2 mx-auto">
+            <h2 class="text-white text-lg font-medium">Notification Badges</h2>
+            <div class="flex flex-row  gap-2 items-start justify-start">
+                <div class="flex items-center justify-center relative bg-gray-900 border-2 size-10  rounded-md">
+                    <div class="absolute top-0 right-0 animate-ping bg-red-500 size-2 rounded-full"></div>    
+                    <ion-icon name="notifications" class="text-amber-300"></ion-icon>
+                </div>
+                <div class="flex items-center justify-center relative bg-gray-900 border-2 size-10  rounded-md">
+                    <div class="absolute top-0 right-0 text-white text-[6px] pl-0.5 animate-pulse bg-green-500 size-2 rounded-full">0</div>    
+                    <ion-icon name="chatbox-ellipses" class="text-white"></ion-icon>
+                </div>
+                <div class="flex items-center justify-center relative bg-gray-900 border-2 size-10  rounded-md">
+                    <div class="absolute top-0 right-0 animate-bounce bg-sky-500 text-[6px] pl-0.5 size-2 text-white rounded-full">1</div>    
+                    <ion-icon name="mail" class="text-white"></ion-icon>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex flex-col gap-1 justify-between px-10 py-2 mx-auto">
+            <h2 class="text-white text-lg font-medium">Loading States</h2>
+            <div class="grid grid-cols-3  gap-3 items-center justify-evenly w-full">
+                <div class="flex flex-col gap-1 duration-300 items-start justify-center p-2 bg-gray-900 border-2 h-20 w-full rounded-md">
+                    <div class="bg-gray-700 border-gray-400 animate-pulse rounded-md size-5"></div>
+                    <h3 class="bg-gray-700 h-1.5 w-25 animate-pulse"></h3>
+                    <h3 class="bg-gray-700 h-1 w-40 animate-pulse"></h3>
+                    <h3 class="bg-gray-700 h-0.5 w-30 animate-pulse"></h3>
+                    <p class="text-gray-600 text-[8px] animate-pulse">Skelton loader</p>
+                </div>
+                <div class="flex flex-col gap-1 items-start justify-start p-2 bg-gray-900 border-2  h-20 w-full rounded-md">
+                        <button class="flex items-center bg-blue-500 rounded-sm text-white py-1 px-3 text-[8px]">  
+                            <div class="border-white border-b-2 border-r-2 size-2.5 animate-spin  rounded-full mr-1"></div>
+                            Loading
+                        </button>
+                        <p class="text-gray-300 text-[8px]">Loading button</p>
+                </div>
+                <div class="flex flex-col gap-1 h-20 w-full  items-center justify-start p-2  bg-gray-900 rounded-md">
+                    <div class="flex">   
+                        <div class="bg-purple-400  mr-1 border-purple-400  rounded-full size-1  animate-bounce">
+                        </div>
+                        <div class="bg-purple-400  mr-1 border-purple-400  rounded-full size-1 duration-700 ease delay-400 animate-bounce">
+                        </div>
+                        <div class="bg-purple-400  mr-1 border-purple-400  rounded-full size-1  animate-bounce">
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-[8px]">Bouncing dots</p>
+                </div>
+                
+                
+            </div>
+        </section>
+
+        <section class="flex flex-col gap-1 justify-between px-10 py-2 mx-auto">
+            <h2 class="text-white text-lg font-medium">Staggered Animation(Delay)</h2>
+            <div class="grid grid-cols-4 gap-2.5 items-center">
+                <button class=" bg-blue-400 rounded-md opacity-50 duration-300 hover:opacity-100 px-4 py-1 text-white text-[11px]">
+                    Delay 0
+                </button>
+                <button class=" bg-purple-400 rounded-md delay-150 duration-1000 hover:-translate-y-1 px-4 py-1 text-white text-[11px]">
+                    Delay 150
+                </button>
+                <button class="bg-green-400 rounded-md transition delay-350  animate-fadeIn px-4 py-1 text-white text-[11px]">
+                    Delay 350
+                </button>
+                <button class=" bg-orange-400 rounded-md delay-450 hover:rotate-12 hover:scale-50 px-4 py-1 text-white text-[11px]">
+                    Delay 450
+                </button>
+            </div>
+        </section>
+
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script> 
+</body>
+</html>npx @tailwindcss/cli -i input.css -o output.css --watch
